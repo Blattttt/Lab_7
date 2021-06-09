@@ -16,9 +16,9 @@ public class Main {
         System.out.print("Введите номер телефона: ");
         people.phone = input.nextLine();
         System.out.println("Чтобы взять книгу нужно ввести любой символ, а чтобы сдать нажмите enter");
-        String quest = input.nextLine();
+        String action = input.nextLine();
 
-        if (quest.isEmpty()) {
+        if (action.isEmpty()) {
             System.out.println("Введите количество книг, которые читатель хочет вернуть: ");
             int quant = input.nextInt();
             String[] booknames = new String[quant];
